@@ -64,7 +64,10 @@ def load_data(city, month, day):
     day = day.lower()
 
     # load data file into a dataframe
-    df = pd.read_csv(CITY_DATA[city])
+    try:
+        df = pd.read_csv(CITY_DATA[city])
+    except OSError:
+        print('cannot open: ', CITY_DATA[city])
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     # extract month and day of week from Start Time to create new columns
