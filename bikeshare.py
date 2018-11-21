@@ -213,6 +213,7 @@ def raw_data(df):
     while True:
         show_data = input('\nWould you like to see lines of raw data? Enter yes or no.\n')
         if show_data.lower() != 'yes':
+            print ("Next you can resart to look at some more data!\n")
             break
         else:
             num_lines = input('\nHow many lines would you like? (enter a number): \n')
