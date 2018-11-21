@@ -22,3 +22,4 @@ washington.csv - from the Divvy bike sharing system.
 2. Also thanks to the Udacity crew for the code examples and template to help me learn and think at the same time.
 3. Thanks to Anthony F., a classmate that posted lots of questions and answers and showed me how to approach the solution for pairing Start and End stations.
 4. Thanks to lots of discussions on [Stackoverflow](http://stackoverflow.com)
+5. TO DO: Might be nice to allow users more control over filters and lines.
