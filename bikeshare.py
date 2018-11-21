@@ -59,6 +59,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
+    # normalize user input for matching efficiency
     city = city.lower()
     month = month.lower()
     day = day.lower()
@@ -209,6 +210,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+# This would be a good spot for re-factoring and give users more control maybe?
 def raw_data(df):
     while True:
         show_data = input('\nWould you like to see lines of raw data? Enter yes or no.\n')
